@@ -1,0 +1,49 @@
+
+/*Product designs*/
+.preview{
+    letter-spacing: 5px;
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.product-name{
+    font-weight: bolder;
+    font-size: 28px;
+    font-family: 'Fraunces', sans-serif;
+}
+.product-price{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.product-description{
+    font-size: 14px;
+    justify-content: center;
+}
+button img{
+    display: inline-flex;
+}
+
+.bg-darkCyan{
+    letter-spacing: 1px;
+}
+
+div .pp{
+    display: inline;
+    font-size: 12px;
+}
+
+.mobile{
+    display: none;
+}
+@media (max-width: 767px) and (min-width: 320px){
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+}

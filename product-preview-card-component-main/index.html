@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@500;600;700;800&family=Outfit:wght@600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+             darkCyan: 'hsl(158, 36%, 37%)',
+             cream: 'hsl(30, 38%, 92%)',
+             veryDarkBlue: 'hsl(212, 21%, 14%)',
+             darkGrayishBlue:'hsl(228, 12%, 48%)', 
+             White: 'hsl(0, 0%, 100%)',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Inter:wght@500;600;700;800;900&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @font-face {
+      font-family: 'Montserrat';
+       src: url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Montserrat:wght@500;700&display=swap');
+    }
+    /*Montserrat*/
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Montserrat:wght@500;700&display=swap');
+
+    body{
+      background-color: #f5e6f0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class=" desktop max-w-md mx-auto mt-28 bg-white rounded-lg overflow-hidden md:max-w-lg">
+    <div class="grid grid-cols-2 gap-4">
+      <div class="flex justify-center">
+        <img src="images/image-product-desktop.jpg" alt="Product Image" class="h-full">
+      </div>
+      <div class="text-center md:text-left p-5">
+        <h2 class="preview text-thin montserrat">PERFUME</h2>
+        <h2 class="product-name mt-3">Gabrielle Essence Eau De Parfum</h2>
+        <p class="product-description montserrat mt-3 text-darkGrayishBlue">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.</p>
+          <div class="dispaly-inline">
+            <h3 class="product-price text-green mt-3 text-darkCyan">$149.99   <p style="text-decoration: line-through;" class="pp text-black text-thin font-light text-sm text-center">$169.99</p></h3>
+          </div>
+        <button class="bg-darkCyan text-white py-3 px-12 rounded hover:bg-veryDarkBlue montserrat mt-5 text-sm text-center font-bold"><img src="images/icon-cart.svg" alt=""> Add to cart</button>
+      </div>
+    </div>
+  </div>
+  
+
+  <!--Mobile view-->
+  <div class="mobile container border-solid rounded-lg mx-auto mt-5  w-72 bg-White">
+    <img src="images/image-product-mobile.jpg" alt="Product Image" class="h-full rounded-t-lg">
+    <div class="text-left p-5">
+      <h2 class="preview text-thin montserrat">PERFUME</h2>
+      <h2 class="product-name mt-3">Gabrielle Essence Eau De Parfum</h2>
+      <p class="product-description montserrat mt-3 text-darkGrayishBlue">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.</p>
+        <div class="dispaly-inline">
+          <h3 class="product-price text-green mt-3 text-darkCyan">$149.99   <p style="text-decoration: line-through;" class="pp text-veryDarkBlue text-thin font-light text-sm text-center">$169.99</p></h3>
+        </div>
+      <button class="bg-darkCyan text-white py-3 px-16 rounded hover:bg-veryDarkBlue montserrat mt-5 text-sm text-center font-bold"><img src="images/icon-cart.svg" alt=""> Add to cart</button>
+    </div>
+  </div>
+
+
+
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
